@@ -23,8 +23,8 @@ function preload() {
   myImage = loadImage("./assets/MattiaCupelli/image1.jpg");
   chill = loadSound("./assets/MattiaCupelli/song1.mp3");
   //preload the file for the second song
-  myImage2 = loadImage("./assets/ASAP/image2.png");
-  rap = loadSound("./assets/ASAP/song2.mp3");
+  myImage2 = loadImage("./assets/Bazanji/image2.jpg");
+  rap = loadSound("./assets/Bazanji/song2.mp3");
   //preload the file for the third song
   myImage3 = loadImage("./assets/DoubleAgent/image3.jpg");
   rock = loadSound("./assets/DoubleAgent/song3.mp3");
@@ -65,7 +65,7 @@ function draw() {
   volume = map(volume, 0, 1, 0, height);
   stroke(color("#B0413E"));
   noFill();
-  ellipse(width / 6, height / 2, volume);
+  ellipse(width / 6, height / 2, volume * random(), volume * random());
   pop();
   //circle2
   push();
@@ -76,7 +76,7 @@ function draw() {
   rectMode(CENTER);
   translate(width / 2, height / 2);
   rotate(frameCount);
-  rect(0, 0, volume1 * 2, volume1 * 2);
+  rect(0, 0, volume1 , volume1);
   pop();
   //circle3
   push();
@@ -137,14 +137,14 @@ function draw() {
   fill(color("#DE7C5A"));
   textFont(font);
   text("rap", windowWidth / 2, windowHeight / 2 - 200);
-  text("artists: A$AP ROCKY ft The Verve", windowWidth / 2, windowHeight / 2 + 200);
+  text("artist: bazanji", windowWidth / 2, windowHeight / 2 + 200);
   //text3
   textAlign(CENTER, CENTER);
   textSize(20);
   fill(color("#A69888"));
   textFont(font);
   text("rock", 5 * windowWidth / 6, windowHeight / 2 - 200);
-  text("artist: Double Agent", 5 * windowWidth / 6, windowHeight / 2 + 200);
+  text("artist: double agent", 5 * windowWidth / 6, windowHeight / 2 + 200);
 }
 
 //function for the backgrounds
