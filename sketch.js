@@ -63,7 +63,7 @@ function draw() {
   push();
   volume = amp1.getLevel();
   volume = map(volume, 0, 1, 0, height);
-  stroke(color("#B0413E"));
+  stroke(color(249, 239, 225));
   noFill();
   ellipse(width / 6, height / 2, volume * random(), volume * random());
   pop();
@@ -76,7 +76,7 @@ function draw() {
   rectMode(CENTER);
   translate(width / 2, height / 2);
   rotate(frameCount);
-  rect(0, 0, volume1 , volume1);
+  rect(0, 0, volume1, volume1);
   pop();
   //circle3
   push();
@@ -127,7 +127,7 @@ function draw() {
   //text1
   textAlign(CENTER, CENTER);
   textSize(20);
-  fill(color("#B0413E"));
+  fill(color(249, 239, 225));
   textFont(font);
   text("chill", windowWidth / 6, windowHeight / 2 - 200);
   text("artist: mattia cupelli", windowWidth / 6, windowHeight / 2 + 200);
@@ -153,7 +153,7 @@ function background1() {
   this.y = windowHeight / 2;
   this.w = windowWidth / 3;
   this.h = windowHeight;
-  this.color = color(117, 221, 221);
+  this.color = color(119, 151, 123);
 
   this.display = function() {
     rectMode(CENTER);
@@ -200,7 +200,7 @@ function pB1() {
   this.yr = height / 2 + 75;
   this.dw = 150;
   this.dh = 30;
-  this.colorr = color("#B0413E");
+  this.colorr = color(249, 239, 225);
 
   //triangle parameters
   this.x1 = 0
@@ -209,7 +209,7 @@ function pB1() {
   this.y2 = 10;
   this.x3 = 10;
   this.y3 = 10;
-  this.color = color(117, 221, 221);
+  this.color = color(107, 105, 124);
 
   this.display = function() {
     rectMode(CENTER);
